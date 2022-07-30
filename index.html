@@ -65,7 +65,7 @@
             <!--HERO-->
             <section class="hero">
                <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-               <button  class="modal-btn" type="button">Заказать услугу</button>
+               <button  class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </section> 
          <section class="text1">
             <h2 hidden> Наши достоинства</h2>
@@ -401,9 +401,9 @@
         </footer>
       <!--FOOTER-->
   <!---------------------------------MODAL-WIND-->
-    <div class="bacdrop">
+    <div class="bacdrop is-hidden"data-modal >
         <div class="modall-btm">
-            <button type="button" class="modall-btm-button">
+            <button type="button" class="modall-btm-button" data-modal-close>
                 <svg class="modall-close-btn" width="18" height="18">
                     <use href="./images/svg1-2-3/symbol-defs.svg#icon-cloes-modalsvg"></use>
                 </svg>
@@ -413,5 +413,6 @@
         </div>
     </div>
   <!---------------------------------/MODAL-WIND-->
+  <script src="./js/modal.js"></script>
     </body>
 </html>
