@@ -144,11 +144,16 @@ button {
     
     color:var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: block;
+    cursor: pointer;
     }
     .menu-li:hover,
     .menu-li:focus {
         color: var(--knob-color);
     }
+
+    
     .contact-phoun-number {
         display: flex;
         flex-direction: row-reverse;
@@ -225,6 +230,27 @@ margin-right: 30px;
     width: 100%;
     background-color: var(--knob-color);
     border-radius: 2px;
+}
+
+.current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: background-color  var(--transition-knob-color);
+    bottom: -33px;
+}
+
+.current {
+    color:var(--knob-color)
+}
+
+.menu-li:hover::after {
+    background-color:var(--text-color);
 }
 /*======================================/HEADER*/
 /*--------------------------------------HERO--*/
@@ -393,7 +419,25 @@ margin-bottom: 50px;
     border-color: #2196F3;
 }
 
+.photo-div-p {
+    position: relative;
+}
+.photo-p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--whitey-color);
+}
 
+    
 /*-----------------------------------/HERO--*/
 
  /*----------------------------------ABOUT--*/
