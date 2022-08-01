@@ -13,8 +13,7 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+   
 }
 
 .section {
@@ -64,6 +63,7 @@ button {
     border: #ececec;
     padding-top: 24px;
     padding-bottom: 24px;
+
 }
     .page-header-container {
         display: flex;
@@ -140,13 +140,15 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin-left: auto;
+
     
     color:var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     display: block;
     cursor: pointer;
+
+   
     }
     .menu-li:hover,
     .menu-li:focus {
@@ -222,6 +224,24 @@ margin-right: 30px;
 .contact-m {
     margin-right: 30px;
 }
+
+
+.current::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition:  var(--transition-knob-color);
+    bottom: -33px;
+    transform: translate(0%, 750%);
+    
+}
+
 .menu-li.current::after{
     position: absolute;
     display: block;
@@ -230,19 +250,8 @@ margin-right: 30px;
     width: 100%;
     background-color: var(--knob-color);
     border-radius: 2px;
-}
-
-.current::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--text-color);
-    border-radius: 2px;
-    transition: background-color  var(--transition-knob-color);
-    bottom: -33px;
+    
+    
 }
 
 .current {
