@@ -27,7 +27,7 @@ h1, h2, h3, p {
     padding-left: 0;
 }
 ul, ol {
-    margin-bottom: 0;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -45,8 +45,6 @@ li {
 
 .page-header {
     border-bottom: #ECECEC 1px solid;
-     padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-header-container {
@@ -127,6 +125,8 @@ li {
     font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 14px;
+padding-top: 32px;
+padding: 32px 0;
 line-height: 1.14;
 letter-spacing: 0.02em;
 margin-left: auto;
@@ -208,25 +208,15 @@ cursor: pointer;
 
 
 .current::after {
-    position: absolute;
     content: '';
-    left: 0;
-    bottom: 0;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
     background-color: var(--text-color);
-    border-radius: 2px;
     transition:  var(--transition-knob-color);
-    bottom: -33px;
-    transform: translate(0%, 650%);
-    
 }
 
 .menu-li.current::after{
     position: absolute;
     display: block;
-    bottom: -1px;
+    bottom: 0px;
     height: 4px;
     width: 100%;
     background-color: var(--knob-color);
