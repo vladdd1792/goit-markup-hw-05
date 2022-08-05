@@ -23,7 +23,7 @@ a {
     --mail-color:  #757575; 
 }
 h1, h2, h3, p {
-    margin-bottom: 0;
+    margin: 0;
     padding-left: 0;
 }
 ul, ol {
@@ -369,6 +369,15 @@ padding-top: 63px;
 .im-photo-text:hover .photo-text,
 .im-photo-text:focus .photo-text
  {
+    transform: translate(0, 0);
+}
+
+.im-photo-text-bige {
+    position: relative;
+    overflow: hidden;
+}
+.im-photo-text-bige:hover .photo-text,
+.im-photo-text-bige:focus .photo-text {
     transform: translate(0, 0);
 }
 
